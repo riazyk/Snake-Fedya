@@ -1,0 +1,58 @@
+body {
+	
+
+}
+
+
+
+#gameArea {
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
+	background-color: lightgrey;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	/* padding: 20px; */
+	position: relative;
+}
+
+.snakeBodyElement {
+	background-color: orange;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 10px;
+}
+
+.snakeBodyElement:nth-child(29) {
+	background-color: blue;
+}
+
+.gameOver {
+	text-align: center;
+	font-size: 0;
+	vertical-align: middle;
+	/*display: none;*/
+	transition: all 10s;
+	z-index: 2;
+}
+
+.visible {
+	display: block;
+	font-size: 100px;
+	transition: all 0.5s;
+	color: red;
+}
+
+.targets {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	position: absolute;
+}
